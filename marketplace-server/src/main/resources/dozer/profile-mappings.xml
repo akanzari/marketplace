@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net  http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<mapping>
+		<class-a>com.softparadigm.marketplace.domain.User</class-a>
+		<class-b>com.softparadigm.marketplace.dto.UserDTO</class-b>
+		<field-exclude>
+			<a>products</a>
+			<b>products</b>
+		</field-exclude>
+	</mapping>
+	
+		<mapping>
+		<class-a>com.softparadigm.marketplace.domain.Role</class-a>
+		<class-b>com.softparadigm.marketplace.dto.RoleDTO</class-b>
+		<field-exclude>
+			<a>users</a>
+			<b>users</b>
+		</field-exclude>
+	</mapping>
+
+</mappings>

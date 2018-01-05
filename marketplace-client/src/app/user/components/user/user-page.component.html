@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="col-md-12">
+    <h4>
+      <b>Account</b>
+    </h4>
+    <small> {{user.email}} </small>
+    <hr>
+  </div>
+
+  <div class="sidebar col-md-3">
+    <p>
+      <a routerLink="/user/overview" routerLinkActive="active">Overview</a>
+    </p>
+    <hr>
+    <p>
+      <small>ORDERS</small>
+    </p>
+    <p>
+      <a routerLink="/user/orders" routerLinkActive="active">Orders & Returns</a>
+    </p>
+    <hr>
+    <p>
+      <small>ACCOUNT</small>
+    </p>
+    <p>
+      <a routerLink="/user/profile" routerLinkActive="active">Profile</a>
+    </p>
+    <p>
+      <a routerLink="/user/addresses" routerLinkActive="active">My Address</a>
+    </p>
+    <p>
+      <a routerLink="/user/cards" routerLinkActive="active">Saved Cards</a>
+    </p>
+  </div>
+
+  <div class="col-md-9">
+    <router-outlet></router-outlet>
+  </div>
+</div>

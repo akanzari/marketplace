@@ -1,0 +1,23 @@
+.fa {
+  font-size: 2rem;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: transparent;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+ul li ul.dropdown-menu{
+  display: none;
+}
+
+ul li:hover ul.dropdown-menu{
+  display: block;
+}
+
+ul li ul.dropdown-menu li{
+  display: block;
+}
