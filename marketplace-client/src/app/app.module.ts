@@ -11,7 +11,7 @@ import { CoreModule } from './core/core.module';
 import { CatalogModule } from './catalog/catalog.module';
 import { AuthModule } from './auth/auth.module';
 
-import { AppComponent } from './core/containers/app/app.component';
+import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { reducers, metaReducers } from './core/store/reducers/root.reducer';
@@ -41,8 +41,6 @@ import 'rxjs/add/operator/retry';
     CoreModule.forRoot(),
     AuthModule.forRoot(),
     CatalogModule.forRoot()
-  ],
-  providers: [
   ],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,6 @@
 import { ProductState, ProductStateRecord } from "./product.state";
 import * as catalogAction from '../actions/catalog.actions';
-import { Product } from "../../models/product";
+import { Product } from "../../../core/models/product";
 
 export const initialState: ProductState = new ProductStateRecord() as ProductState;
 

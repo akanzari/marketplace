@@ -1,5 +1,5 @@
 import { Map, Record } from 'immutable';
-import { User } from '../../models/user';
+import { User } from '../../../core/models/user';
 
 export interface SignupState extends Map<string, any> {
   loggedIn: boolean;

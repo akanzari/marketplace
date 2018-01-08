@@ -1,4 +1,4 @@
-import { LoginFormComponent } from './../login-form/login-form.component';
+import { SignInFormComponent } from './../sign-in-form/sign-in-form.component';
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 
@@ -7,7 +7,7 @@ import { FormGroup, Validators, FormBuilder } from '@angular/forms';
     templateUrl: './sign-up-form.component.html',
     styleUrls: ['./sign-up-form.component.scss']
 })
-export class SignUpFormComponent extends LoginFormComponent {
+export class SignUpFormComponent extends SignInFormComponent {
 
     signUpForm: FormGroup = this.fb.group({
         username: ['', Validators.compose([Validators.required, Validators.email])],

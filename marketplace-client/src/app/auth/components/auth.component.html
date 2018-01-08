@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <app-sign-up-form 
+            (submitted)="onSubmitRegister($event)" 
+            [pending]="pending$ | async" 
+            [errorMessage]="error$ | async">
+            </app-sign-up-form>
+        </div>
+
+        <div class="col-sm-1 middle-border"></div>
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-5">
+            <app-sign-in-form
+            (submitted)="onSubmitLogin($event)" 
+            [pending]="pending$ | async" 
+            [errorMessage]="error$ | async">
+            </app-sign-in-form>
+        </div>
+    </div>
+</div>

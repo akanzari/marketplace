@@ -1,0 +1,15 @@
+<ng-progress [positionUsing]="'marginLeft'" [direction]="'leftToRightIncreased'" [color]="'#fc6fb1'" [trickleSpeed]="500"
+  [thick]="true" [ease]="'easeInSine'">
+</ng-progress>
+
+<ng2-toasty [position]="'top-right'"></ng2-toasty>
+
+<app-header></app-header>
+
+<section class="section white-backgorund">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</section>
+
+<app-footer></app-footer>

@@ -1,4 +1,4 @@
-import { Category } from '../../models/category';
+import { Category } from '../../../core/models/category';
 import { Map, Record, List } from 'immutable';
 
 export interface CategoryState extends Map<string, any> {

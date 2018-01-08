@@ -44,7 +44,7 @@ export class AuthEffects {
     .ofType(authAction.LOGIN_REDIRECT)
     .map((action: authAction.LoginRedirect) => action.payload)
     .do(params => {
-      this.router.navigate(['/auth/login'], { ...params });
+      this.router.navigate(['/auth'], { ...params });
     });
 
   @Effect({ dispatch: false })
@@ -53,7 +53,7 @@ export class AuthEffects {
     .exhaustMap(auth =>
       this.authService
         .logout()
-        .map(() => this.router.navigate(['/auth/login']))
+        .map(() => this.router.navigate(['/auth']))
         .catch(error => of(new authAction.LoginFailure(error)))
     );
 

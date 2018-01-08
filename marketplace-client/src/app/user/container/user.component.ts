@@ -2,7 +2,6 @@ import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as fromRoot from './../../core/store/reducers/root.reducer';
 import { Observable } from 'rxjs/Observable';
-import { User } from '../../auth/models/user';
 import { getUser } from '../../auth/store/reducers/selectors';
 
 @Component({

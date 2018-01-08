@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CatalogService } from '../services/catalog.service';
-import { Product } from '../models/product';
+import { Product } from '../../core/models/product';
 
 @Component({
     selector: 'app-product-detail-content',

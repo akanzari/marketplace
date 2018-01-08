@@ -1,4 +1,4 @@
-import { Product } from '../../models/product';
+import { Product } from '../../../core/models/product';
 import { Map, Record, List } from 'immutable';
 
 export interface ProductState extends Map<string, any> {

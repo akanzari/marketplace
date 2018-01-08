@@ -1,0 +1,72 @@
+<div class="navbar yamm navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-3" class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="javascript:void(0);" class="navbar-brand visible-xs">
+                <img routerLink="/" width="83" height="46" src="/assets/logo.png" alt="logo">
+            </a>
+        </div>
+        <div id="navbar-collapse-3" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li *ngFor="let category of categories" class="dropdown yamm-fw">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{category.name}}
+                        <i class="fa fa-angle-down ml-5"></i>
+                    </a>
+                    <ul *ngIf="category.subCategory.length>0" class="dropdown-menu">
+                        <li>
+                            <div class="yamm-content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a href="javascript:void(0);">
+                                            <figure class="zoom-out">
+                                                <img alt="" src="/assets/banners/collection_01.JPG">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a href="javascript:void(0);">
+                                            <figure class="zoom-in">
+                                                <img alt="" src="/assets/banners/collection_02.JPG">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a href="javascript:void(0);">
+                                            <figure class="zoom-out">
+                                                <img alt="" src="/assets/banners/collection_03.JPG">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a href="javascript:void(0);">
+                                            <figure class="zoom-in">
+                                                <img alt="" src="/assets/banners/collection_04.JPG">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <hr class="spacer-20 no-border">
+
+                                <div class="row">
+                                    <ul class="col-sm-3">
+                                        <li class="title">
+                                            <h6>Shop Pages</h6>
+                                        </li>
+                                        <li *ngFor="let subCategory of category.subCategory">
+                                            <a (click)="selectCategory(subCategory.slug)" [routerLink]="['/catalog/product-list/', subCategory.slug]">{{subCategory.name}}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

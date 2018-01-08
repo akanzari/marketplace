@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import * as fromRoot from './../../../core/store/reducers/root.reducer';
 import { Observable } from 'rxjs/Observable';
 import { getUser } from '../../../auth/store/reducers/selectors';
-import { User } from '../../../auth/models/user';
+import { User } from '../../../core/models/user';
 
 @Component({
   selector: 'app-user-page',

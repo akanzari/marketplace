@@ -46,7 +46,7 @@ export class CatalogModule {
   static forRoot() {
     return {
       ngModule: CatalogModule,
-      providers: [CatalogService],
+      providers: [CatalogService]
     };
   }
 }

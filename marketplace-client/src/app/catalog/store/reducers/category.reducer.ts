@@ -1,7 +1,7 @@
 import { CategoryState, CategoryStateRecord } from "./category.state";
 import * as catalogAction from '../actions/catalog.actions';
-import { Product } from "../../models/product";
-import { Category } from "../../models/category";
+import { Product } from "../../../core/models/product";
+import { Category } from "../../../core/models/category";
 
 export const initialState: CategoryState = new CategoryStateRecord() as CategoryState;
 

@@ -6,17 +6,15 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 
 import { AuthRoutingModule } from './auth-routing.module';
-import { LoginComponent } from './container/login/login.component';
-import { LoginFormComponent } from './components/login-form/login-form.component';
+import { SignInFormComponent } from './components/sign-in-form/sign-in-form.component';
 import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
-import { SignUpComponent } from './container/sign-up/sign-up.component';
 import { authReducers } from './store/interface';
 import { AuthEffects } from './store/effects/auth.effect';
+import { AuthComponent } from './components/auth.component';
 
 export const COMPONENTS = [
-  LoginComponent,
-  LoginFormComponent,
-  SignUpComponent,
+  AuthComponent,
+  SignInFormComponent,
   SignUpFormComponent
 ];
 

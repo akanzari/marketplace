@@ -1,0 +1,180 @@
+<!-- start topBar -->
+<div class="topBar">
+    <div class="container">
+        <ul class="topBarNav pull-left">
+            <li class="linkdown">
+                <a href="javascript:void(0);">
+                    <i class="fa fa-usd mr-5"></i>
+                    USD
+                    <i class="fa fa-angle-down ml-5"></i>
+                </a>
+                <ul class="w-100">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-eur mr-5"></i>EUR</a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-usd mr-5"></i>USD</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-gbp mr-5"></i>GBP</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="linkdown">
+                <a href="javascript:void(0);">
+                    <img src="/assets/flags/flag-french.jpg" class="mr-5" alt="">
+                    <span class="hidden-xs">
+                        French
+                        <i class="fa fa-angle-down ml-5"></i>
+                    </span>
+                </a>
+                <ul class="w-100">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="/assets/flags/flag-english.jpg" class="mr-5" alt="">English</a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:void(0);">
+                            <img src="/assets/flags/flag-french.jpg" class="mr-5" alt="">French</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="topBarNav pull-right">
+            <li *ngIf="!isLoggedIn">
+                <a [routerLink]="['/auth']">Login or Register</a>
+            </li>
+            <li class="linkdown">
+                <a *ngIf="isLoggedIn" href="javascript:void(0);">
+                    <i class="fa fa-user mr-5"></i>
+                    <span class="hidden-xs">
+                        My Account
+                        <i *ngIf="isLoggedIn" class="fa fa-angle-down ml-5"></i>
+                    </span>
+                </a>
+                <a *ngIf="!isLoggedIn" [routerLink]="['/auth']">
+                    <i class="fa fa-user mr-5"></i>
+                    <span class="hidden-xs">
+                        My Account
+                        <i *ngIf="isLoggedIn" class="fa fa-angle-down ml-5"></i>
+                    </span>
+                </a>
+                <ul *ngIf="isLoggedIn" class="w-150">
+                    <li>
+                        <a routerLink="/user">My Profile</a>
+                    </li>
+                    <li>
+                        <a routerLink="/user/orders">My Orders</a>
+                    </li>
+                    <li>
+                        <a routerLink="/user/addresses">Saved Addresses</a>
+                    </li>
+                    <li>
+                        <a routerLink="/user/cards">Saved Cards</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a (click)="logout()">Logout</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="linkdown">
+                <a *ngIf="isLoggedIn">
+                    <i class="fa fa-shopping-basket mr-5"></i>
+                    <span class="hidden-xs">
+                        Cart
+                        <sup *ngIf="isLoggedIn" class="text-primary">(3)</sup>
+                        <i *ngIf="isLoggedIn" class="fa fa-angle-down ml-5"></i>
+                    </span>
+                </a>
+                <a *ngIf="!isLoggedIn" [routerLink]="['/auth']">
+                    <i class="fa fa-shopping-basket mr-5"></i>
+                    <span class="hidden-xs">
+                        Cart
+                        <sup *ngIf="isLoggedIn" class="text-primary">(3)</sup>
+                        <i *ngIf="isLoggedIn" class="fa fa-angle-down ml-5"></i>
+                    </span>
+                </a>
+                <ul *ngIf="isLoggedIn" class="cart w-250">
+                    <li>
+                        <div class="cart-items">
+                            <ol class="items">
+                                <li>
+                                    <a href="shop-single-product-v1.html" class="product-image">
+                                        <img src="/assets/products/men_06.jpg" alt="Sample Product ">
+                                    </a>
+                                    <div class="product-details">
+                                        <div class="close-icon">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-close"></i>
+                                            </a>
+                                        </div>
+                                        <p class="product-name">
+                                            <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a>
+                                        </p>
+                                        <strong>1</strong> x
+                                        <span class="price text-primary">$59.99</span>
+                                    </div>
+                                    <!-- end product-details -->
+                                </li>
+                                <!-- end item -->
+                                <li>
+                                    <a href="shop-single-product-v1.html" class="product-image">
+                                        <img src="/assets/products/shoes_01.jpg" alt="Sample Product ">
+                                    </a>
+                                    <div class="product-details">
+                                        <div class="close-icon">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-close"></i>
+                                            </a>
+                                        </div>
+                                        <p class="product-name">
+                                            <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a>
+                                        </p>
+                                        <strong>1</strong> x
+                                        <span class="price text-primary">$39.99</span>
+                                    </div>
+                                    <!-- end product-details -->
+                                </li>
+                                <!-- end item -->
+                                <li>
+                                    <a href="shop-single-product-v1.html" class="product-image">
+                                        <img src="/assets/products/bags_07.jpg" alt="Sample Product ">
+                                    </a>
+                                    <div class="product-details">
+                                        <div class="close-icon">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-close"></i>
+                                            </a>
+                                        </div>
+                                        <p class="product-name">
+                                            <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a>
+                                        </p>
+                                        <strong>1</strong> x
+                                        <span class="price text-primary">$29.99</span>
+                                    </div>
+                                    <!-- end product-details -->
+                                </li>
+                                <!-- end item -->
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-footer">
+                            <a href="cart.html" class="pull-left">
+                                <i class="fa fa-cart-plus mr-5"></i>View Cart</a>
+                            <a href="checkout.html" class="pull-right">
+                                <i class="fa fa-shopping-basket mr-5"></i>Checkout</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end container -->
+</div>
+<!-- end topBar -->

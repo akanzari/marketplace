@@ -6,9 +6,9 @@ import { Effect, Actions, toPayload } from '@ngrx/effects';
 import { Observable } from 'rxjs/Observable';
 import * as catalogAction from '../actions/catalog.actions';
 import { CatalogService } from '../../services/catalog.service';
-import { Product } from '../../models/product';
+import { Product } from '../../../core/models/product';
 import { of } from 'rxjs/observable/of';
-import { Category } from '../../models/category';
+import { Category } from '../../../core/models/category';
 
 @Injectable()
 export class CatalogEffects {

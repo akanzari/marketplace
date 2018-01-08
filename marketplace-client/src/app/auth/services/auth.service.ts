@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { _throw } from 'rxjs/observable/throw';
-import { User, Authenticate } from '../models/user';
+import { User, Authenticate } from '../../core/models/user';
 import { of } from 'rxjs/observable/of';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ToastyService } from 'ng2-toasty';

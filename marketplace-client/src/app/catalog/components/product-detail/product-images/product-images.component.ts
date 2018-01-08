@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Image } from '../../../models/image';
+import { Image } from '../../../../core/models/image';
 import { environment } from '../../../../../environments/environment.prod';
 
 @Component({

@@ -4,8 +4,8 @@ import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
-import { Product } from '../models/product';
-import { Category } from '../models/category';
+import { Product } from '../../core/models/product';
+import { Category } from '../../core/models/category';
 
 @Injectable()
 export class CatalogService {

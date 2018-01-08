@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import * as catalogActions from '../../catalog/store/actions/catalog.actions';
 import * as fromRoot from './../../core/store/reducers/root.reducer';
 import { Observable } from 'rxjs/Observable';
-import { Product } from '../models/product';
+import { Product } from '../../core/models/product';
 import { getProducts } from '../store/reducers/selectors';
 
 @Component({

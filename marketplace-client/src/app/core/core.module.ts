@@ -6,12 +6,12 @@ import { NgProgressModule, NgProgressBrowserXhr, NgProgressInterceptor } from 'n
 
 // Import HttpClientModule from @angular/common/http
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { TokenInterceptor } from '../auth/interceptors/token.interceptor';
 
-import { AppComponent } from './containers/app/app.component';
+import { AppComponent } from '../app.component';
 import { LayoutModule } from '../layout/layout.module';
 import { BrowserXhr } from '@angular/http/src/backends/browser_xhr';
 import { CanActivateViaAuthGuard } from './guards/auth.guard';
+import { TokenInterceptor } from './interceptors/token.interceptor';
 
 export const COMPONENTS = [
   AppComponent

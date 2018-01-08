@@ -1,0 +1,47 @@
+<div class="middleBar">
+    <div class="container">
+        <div class="row display-table">
+            <div class="col-sm-3 vertical-align text-left hidden-xs">
+                <a href="javascript:void(0);">
+                    <img routerLink="/" width="220" height="80" src="/assets/logo.png" alt="" />
+                </a>
+            </div>
+            <div class="col-sm-7 vertical-align text-center">
+                <!-- <form> -->
+                <div class="row grid-space-1">
+                    <div class="col-sm-6">
+                        <input type="text" name="keyword" class="form-control input-lg" placeholder="Search">
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-control input-lg" name="category">
+                            <option value="all">All Categories</option>
+                            <ng-template ngFor let-category [ngForOf]="categories">
+                                <optgroup *ngFor="let subCategory of category.subCategory" label="{{category.name}}">
+                                    <option value="{{subCategory.name}}">{{subCategory.name}}</option>
+                                </optgroup>
+                            </ng-template>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="submit" class="btn btn-default btn-block btn-lg" value="Search">
+                    </div>
+                </div>
+                <!-- </form> -->
+            </div>
+            <div class="col-sm-2 vertical-align header-items hidden-xs">
+                <div class="header-item mr-5">
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Wishlist">
+                        <i class="fa fa-heart-o"></i>
+                        <sub>32</sub>
+                    </a>
+                </div>
+                <div class="header-item">
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Compare">
+                        <i class="fa fa-refresh"></i>
+                        <sub>2</sub>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

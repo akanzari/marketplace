@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
-import { Product } from '../../models/product';
-import { Category } from '../../models/category';
+import { Product } from '../../../core/models/product';
+import { Category } from '../../../core/models/category';
 
 export const FETCH_PRODUCTS = '[Product] Fetch Products';
 export const FETCH_PRODUCTS_SUCCESS = '[Product] Fetch Products Success';

@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'catalog', loadChildren: './catalog/catalog.module#CatalogModule' },
   { path: 'auth', loadChildren: './auth/auth.module#RootAuthModule' },
   { path: 'user', loadChildren: './user/user.module#UserModule', canActivate: [CanActivateViaAuthGuard] },
+  { path: 'checkout', loadChildren: './checkout/checkout.module#CheckoutModule' },
 ];
 
 @NgModule({

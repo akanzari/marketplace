@@ -1,5 +1,5 @@
 import * as authAction from '../actions/auth.actions';
-import { User } from '../../models/user';
+import { User } from '../../../core/models/user';
 import { SignupState, SignupStateRecord } from './signup.state';
 
 export const initialState: SignupState = new SignupStateRecord() as SignupState;
