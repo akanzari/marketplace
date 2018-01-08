@@ -1,4 +1,4 @@
-import { UserComponent } from "./container/user.component";
+import { UserComponent } from "./components/user.component";
 import { AddressesPageComponent } from "./components/addresses/addresses-page.component";
 import { OverviewPageComponent } from "./components/overview/overview-page.component";
 import { OrdersPageComponent } from "./components/orders/orders-page.component";

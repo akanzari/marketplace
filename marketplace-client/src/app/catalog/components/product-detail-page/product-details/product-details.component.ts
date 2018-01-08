@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Product } from '../../../core/models/product';
-import { Image } from '../../../core/models/image';
+import { Product } from '../../../../core/models/product';
+import { Image } from '../../../../core/models/image';
 
 @Component({
   selector: 'app-product-details',

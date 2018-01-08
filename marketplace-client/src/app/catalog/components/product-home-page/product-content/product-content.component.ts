@@ -1,9 +1,9 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import * as fromRoot from './../../core/store/reducers/root.reducer';
+import * as fromRoot from './../../../../app.reducer';
 import { Observable } from 'rxjs/Observable';
-import { getProducts } from '../store/reducers/selectors';
+import { getProducts } from '../../../store/reducers/selectors';
 import { Store } from '@ngrx/store';
-import { Product } from '../../core/models/product';
+import { Product } from '../../../../core/models/product';
 
 @Component({
   selector: 'app-content',

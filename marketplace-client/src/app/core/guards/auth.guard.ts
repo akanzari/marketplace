@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import { Injectable, OnDestroy } from '@angular/core';
 import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Store } from '@ngrx/store';
-import * as fromRoot from './../../core/store/reducers/root.reducer';
+import * as fromRoot from './../../app.reducer';
 import { getLoggedIn } from '../../auth/store/reducers/selectors';
 
 @Injectable()

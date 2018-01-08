@@ -1,4 +1,4 @@
-import * as fromRoot from './../../core/store/reducers/root.reducer';
+import * as fromRoot from './../../app.reducer';
 import { SigninState } from './reducers/signin.state';
 import { signupReducer } from './reducers/signup.reducer';
 import { signinReducer } from './reducers/signin.reducer';

@@ -1,4 +1,4 @@
-import * as fromRoot from './../../core/store/reducers/root.reducer';
+import * as fromRoot from './../../app.reducer';
 import { ProductState } from './reducers/product.state';
 import { productReducer } from './reducers/product.reducer';
 import { CategoryState } from './reducers/category.state';

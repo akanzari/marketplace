@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import * as fromRoot from './../../../core/store/reducers/root.reducer';
+import * as fromRoot from './../../../app.reducer';
 import { AppState } from '../../../auth/store/interface';
 import { Logout, Authorized } from '../../../auth/store/actions/auth.actions';
 import { getLoggedIn } from '../../../auth/store/reducers/selectors';

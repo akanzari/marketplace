@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Image } from '../../../../core/models/image';
-import { environment } from '../../../../../environments/environment.prod';
+import { Image } from '../../../../../core/models/image';
+import { environment } from '../../../../../../environments/environment.prod';
 
 @Component({
     selector: 'app-image-container',

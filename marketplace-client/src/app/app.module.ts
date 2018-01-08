@@ -14,7 +14,7 @@ import { AuthModule } from './auth/auth.module';
 import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
-import { reducers, metaReducers } from './core/store/reducers/root.reducer';
+import { reducers, metaReducers } from './app.reducer';
 
 import { environment } from '../environments/environment';
 

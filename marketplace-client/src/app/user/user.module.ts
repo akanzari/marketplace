@@ -5,7 +5,7 @@ import { UserRoutes as routes } from './user-routing.module';
 import { OrderDetailComponent } from './components/orders/order-detail/order-detail.component';
 import { OrderListItemComponent } from './components/orders/order-list-item/order-list-item.component';
 import { CommonModule } from '@angular/common';
-import { UserComponent } from './container/user.component';
+import { UserComponent } from './components/user.component';
 import { UserPageComponent } from './components/user/user-page.component';
 import { ProfilePageComponent } from './components/profile/profile-page.component';
 import { AddressesPageComponent } from './components/addresses/addresses-page.component';
